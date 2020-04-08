@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <!--    <link rel="stylesheet" href="CSS/style.css" />-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        h1 {
+            color: rgb(255, 140, 0);
+            font-size: 60px;
+            text-align: center;
+        }
+
+        p {
+            color: #eee;
+            font-size: 12px;
+        }
+
+        .section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 90px
+        }
+
+        .section .tab {
+            position: sticky;
+            top: 0;
+            left: 0;
+            padding: 8px 32px 8px 16px;
+            border-bottom-right-radius: 4px;
+            align-self: flex-start;
+        }
+
+        .section:nth-of-type(odd) .tab {
+            background-color: rgb(255, 140, 0);
+            color: white;
+        }
+
+        .gradient-bg {
+            background: #222;
+            /*
+            background: rgb(113,0,145);
+            background: radial-gradient(circle, rgba(113,0,145,1) 0%, rgba(36,36,36,1) 50%);
+*/
+        }
+
+        /*---- container for three images / 3 columns ----*/
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        /*---- Column sizing with flex ----*/
+        .column {
+            position: relative;
+        }
+
+        .column-left {
+            flex: .5;
+            align-self: flex-end;
+        }
+
+        .column-center {
+            flex: 1;
+            align-self: flex-start;
+        }
+
+        .column-right {
+            flex: .5;
+            align-self: flex-end;
+        }
+
+        /*---- Image ----*/
+        .column img {
+            width: 100%;
+            height: auto;
+        }
+
+        .column img.flip {
+            transform: scaleX(-1);
+        }
+
+        /*---- Label Positioning ----*/
+        .column p {
+            position: absolute;
+        }
+
+        .column p.remote-tracking {
+            top: -40%;
+            left: 50px;
+            width: 200px;
+        }
+
+        .column p.thumbstick {
+            bottom: -15%;
+            right: 1s0%;
+        }
+
+        .column p.lenses {
+            top: 25%;
+            right: -100px;
+            width: 200px
+        }
+
+        .column p.grip {
+            top: -20px;
+            right: 10%;
+        }
+
+        .column p.trigger {
+            transform: translate(50%, 50%)
+        }
+
+        /*---- Use Media Query to adjust css base on device screen size ----*/
+        @media only screen and (max-width: 768px) {
+            p {
+                display: none;
+                /* hide text on mobile and replace with tappable hotspot*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section gradient-bg">
+        <h3 class="tab">Tech</h3>
+        <h1 class="how-it-works">How It Works</h1>
+        <div class="image-wrapper">
+            <div class="column column-left">
+                <img src="Website/Images/Oculus_How_It_Works_01 copy.gif">
+                <p class="remote-tracking">Positional tracking (infrared LED) sensors pointing in all directions,
+                    locating controller’s XYZ</p>
+                <p class="thumbstick">Thumbstick for moving around</p>
+            </div>
+            <div class="column column-center">
+                <img src="https://www.vrbound.com/assets/img/devices/oculus-rift.png">
+                <p class="lenses">Polarized lenses projecting 2 images, one for each eye, allowing the illusions of 3D
+                    depth of field.</p>
+            </div>
+            <div class="column column-right">
+                <img src="https://www.thecoolector.com/wp-content/uploads/2018/10/oc6.png" class="right-controller">
+                <p class="grip">Grip simulator</p>
+                <p class="trigger">Trigger button</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/index.js">
+    </script>
+</body>
+
+</html>
