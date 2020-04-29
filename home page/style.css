@@ -1,3 +1,16 @@
 h1{
-    color:red;
+    color:lightskyblue;
+}
+
+.demo_button{
+    background-color: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.demo_button:hover{
+    background-color: lightskyblue;
 }
