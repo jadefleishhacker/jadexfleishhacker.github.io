@@ -1,14 +1,16 @@
 h1{
     color:lightskyblue;
+    font-family: 'Lobster', cursive;
 }
 
 .demo_button{
     background-color: none;
-    border-radius: 10px;
+    border-radius: 25PX;
     padding: 10px;
     text-decoration: none;
-    color: black;
-    
+    color: rgb(255, 119, 119);
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
 .demo_button:hover{
