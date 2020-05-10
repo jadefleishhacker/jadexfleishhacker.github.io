@@ -7,9 +7,13 @@
 @media screen and (min-width: 425px){
     .home-text{
         width: 100%;
+        float: none;
+        display: flex;
     }
     .home-picture{
         width: 100%;
+        float: none;
+        display: flex;
     }
 }
 
