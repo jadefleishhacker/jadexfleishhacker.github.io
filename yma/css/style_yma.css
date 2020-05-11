@@ -30,8 +30,8 @@ header{
     text-decoration: none;
     color: white;
     text-align: center;
-    align-items: flex-end;
-
+    align-items: center;
+    align-self: center;
 }
 
 .home-hero{
