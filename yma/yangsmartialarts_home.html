@@ -7,21 +7,37 @@
 <body>
 
     <header id="Home">
-        <nav>
+        <div>
             <div class="logo">
                 <a href="#home">
                     <img class="logo" src="">
                 </a>
             </div>
-            <div class="nav">
+            <nav role="navigation" class="open-nav">
                 <a class="nav-links" href="#home">HOME</a>
                 <a class="nav-links" href="#about">ABOUT</a>
                 <a class="nav-links" href="#classes">CLASSES</a>
                 <a class="nav-links" href="#news/events">NEWS/EVENTS</a>
                 <a class="nav-links" href="#locations">LOCATIONS</a>
                 <a class="nav-links" href="#contact">CONTACT US</a>
-            </div>
-        </nav>
+            </nav>
+            <nav role="navigation" class="closed-nav">
+                <div id="menutoggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="closed-nav-links">
+                        <a class="nav-links" href="#home">HOME</a>
+                        <a class="nav-links" href="#about">ABOUT</a>
+                        <a class="nav-links" href="#classes">CLASSES</a>
+                        <a class="nav-links" href="#news/events">NEWS/EVENTS</a>
+                        <a class="nav-links" href="#locations">LOCATIONS</a>
+                        <a class="nav-links" href="#contact">CONTACT US</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section id="hero-image">
