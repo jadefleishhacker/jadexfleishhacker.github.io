@@ -4,19 +4,6 @@
   box-sizing: border-box;
 }
 
-@media screen (max-width:425px){
-    .home-text{
-        display: block;
-        float: :left;
-        width: 50%;
-    }
-    .home-picture{
-        flex-direction: row;
-        width: 50%;
-        background-color: powderblue;
-    }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -27,23 +14,34 @@ header{
     height: 50px;
 }
 
+.nav-links{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    align-items: flex-end;
+
+}
+
 .home-hero{
     width: 100%;
     height: 400px;
     background-color: lightgrey;
 }
 
+.home-description{
+    display: flex;
+}
+
 .home-text{
-    display: flexbox;
-    width: 100%;
+    display: flex;
+    width: 50%;
     height: 400px;
     background-color: lightsteelblue;
 }
 
 .home-picture{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    width: 50%;
     height: 400px;
     background-color: lightyellow;
 }
