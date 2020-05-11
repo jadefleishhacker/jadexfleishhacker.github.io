@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 425px){
+    .home-description{
+        display: block;
+    }
+    .home-text{
+        width: 100%;
+    }
+    .home-picture{
+        width: 100%;
+    }
+}
+
 html {
   scroll-behavior: smooth;
 }
