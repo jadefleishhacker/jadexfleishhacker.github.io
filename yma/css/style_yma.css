@@ -47,18 +47,22 @@ html {
 header{
     background-color:black;
     width: 100%;
-    height: 50px;
+    height: 70px;
 }
 
-.logo{
-  width: 10px;
+.kjms_logo{
+  width: 60px;
+  padding-top: 7px;
+  position: absolute;
+  left: 50px;
 }
 
 .open-nav{
     text-align: center;
     font-family: sans-serif;
-    font-size: .6em;
-    padding-top: 2;
+    font-size: .8em;
+    padding-top: 30px;
+    padding: auto;
 }
 
 .nav-links{
