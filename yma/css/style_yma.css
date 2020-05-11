@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 768px){
     .home-description{
         display: flex;
         flex-direction: column;
@@ -25,7 +25,7 @@
     }
 }
 
-@media screen and (min-width: 426px){
+@media screen and (min-width: 769px){
     #menutoggle{
       opacity: 0;
     }
