@@ -225,6 +225,14 @@ header{
     border-color: lightsteelblue;
 }
 
+p{
+    padding: 50px;
+    width: 700px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
 .home-picture{
     display: flex;
     width: 50%;
