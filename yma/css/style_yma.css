@@ -16,7 +16,29 @@
     .home-picture{
         width: 100%;
     }
+    #menutoggle{
+      opacity: 1;
+    }
+    .open-nav{
+      opacity: 0;
+      margin: 0px;
+    }
 }
+
+@media screen and (min-width: 426px){
+    #menutoggle{
+      opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 html {
   scroll-behavior: smooth;
@@ -71,7 +93,11 @@ a{
 }
 
 #menutoggle a:hover{
-  color: tomato;
+  color: #D73D45;
+}
+
+.nav-links:hover{
+  color: #D73D45;
 }
 
 #menutoggle input{
@@ -104,9 +130,8 @@ a{
   
   transform-origin: 4px 0px;
   
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: transform 0.5s 
+              background 0.5s 
 }
 
 #menuToggle span:first-child{
@@ -120,7 +145,7 @@ a{
 #menutoggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #ffffff;
 }
 
 #menutoggle input:checked ~ span:nth-last-child(3){
@@ -134,7 +159,7 @@ a{
 
 .closed-nav-links{
   position: absolute;
-  width: 300px;
+  width: 200px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -152,9 +177,11 @@ a{
 
 .closed-nav-links a{
   padding: 5px 0;
-  font-size: 1em;
+  font-size: 1.2em;
   display: flex;
   flex-direction: column;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 #menutoggle input:checked ~ .closed-nav-links
