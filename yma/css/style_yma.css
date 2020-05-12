@@ -17,7 +17,7 @@
   background-color: #121212;
   overflow: auto;
   position: fixed;
-  height: 100%;
+  height: 80px;
 }
 
 .nav-links {
@@ -145,7 +145,7 @@
 
 
 .hero{
-  
+
 }
 
 
