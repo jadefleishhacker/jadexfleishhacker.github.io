@@ -15,7 +15,7 @@
 .navigation-bar{
   width: 100%;
   background-color: #121212;
-  overflow: auto;
+  overflow: visible;
   position: fixed;
   height: 80px;
   z-index: 10;
@@ -27,11 +27,12 @@
   padding-top: 30px;
   color: white;
   text-decoration: none;
-  font-size: 1em;
+  font-size: .5em;
   font-family: sans-serif;
   width: auto; /* Four links of equal widths */
   text-align: center;
 }
+
 
 .open-nav a:hover {
   color: #D73D45}
@@ -114,7 +115,7 @@
   transform: rotate(-45deg) translate(0, -1px);
 }
 #menu{
-  position: absolute;
+  position: relative;
   width: 250px;
   margin: -100px 0 0 -50px;
   padding-left: 50px;
@@ -131,14 +132,12 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
+#menu li{
   padding: 10px 0;
   font-size: 22px;
 }
 
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul{
   transform: none;
 }
 
@@ -151,7 +150,7 @@
   border-color: lavender;
 }
 
-.hero-container {
+.hero-container{
   max-width: 100%;
   position: relative;
   margin: auto;
