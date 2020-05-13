@@ -36,7 +36,7 @@
 .open-nav a:hover {
   color: #D73D45}
 
-.open-nav a.active {
+.open-nav a.active-nav {
   color: #D73D45;
 }
 
@@ -181,21 +181,24 @@
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.hero-text{
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+  top: -1000px;
+  color: white;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.title{
+  font-size: 400%;
+  padding-bottom: 30px;
 }
 
-
-
-
-
-
+.subtitle{
+  padding-top: 5px;
+  font-size: 200%;
+  }
+}
 
 
 
@@ -276,6 +279,17 @@
 
   }
     
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
 
 
 
