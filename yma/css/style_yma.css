@@ -192,13 +192,15 @@
    }
 
    .home-text{
-     display: flex;
+     display: block;
+     float: left;
      flex-direction: row;
      width: 50%;
    }
 
    .home-image{
-     display: flex;
+     display: block;
+     float: right;
      flex-direction: row;
      width: 50%;
    }
