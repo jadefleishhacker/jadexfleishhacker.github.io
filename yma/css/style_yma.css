@@ -35,7 +35,7 @@
 .open-nav a:hover {
   color: #D73D45}
 
-.open-nav a .active-navve {
+.open-nav a.active {
   color: #D73D45;
 }
 
@@ -170,7 +170,7 @@
   transition: background-color 0.6s ease;
 }
 
-,.active .dot:hover {
+.active, .dot:hover {
   background-color: white;
 }
 
