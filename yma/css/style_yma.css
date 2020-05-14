@@ -151,12 +151,13 @@
   border-color: lavender;
 }
 
-.hero-container{
+.hero-container .mySlides{
   max-width: 100%;
-  position: aboslute;
+  position: relative;
   margin: auto;
   z-index: -1;
 }
+
 
 .hero-top-text{
   position: relative;
@@ -184,8 +185,8 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  position: relative;
-  top: -900;
+  position: absolute;
+  top: 500;
   transition: background-color 0.6s ease;
 }
 
