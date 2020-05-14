@@ -198,6 +198,10 @@
   font-size: 150%;
 }
 
+.button{
+  font-size: 200%;
+}
+
 .dot-ctrl{
   width: 100%;
   display: flex;
@@ -284,6 +288,7 @@
   background-image: url(/yma/images/home_images/Gus_Supervising.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 
