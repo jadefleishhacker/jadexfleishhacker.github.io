@@ -417,6 +417,7 @@
   top: 270px;
   color: #D73D45;
   font-weight: 1;
+  text-align: center;
 }
 
 
@@ -892,43 +893,89 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-.hq-address{
-  width: calc(100% - 100px);
-  border-style: solid;
-  height: 100px;
-  border-color: black;
-  margin: 50px;
-  margin-top:300px
-}
-
 .hq-map{
-  width: calc(100% - 100px);
-  border-style: solid;
-  height: 500px;
-  border-color: black;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: -50px;
+  padding-top: 300px;
 }
 
-.address{
-  width: 50
+.map{
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
+.loca-container{
+  width: 100%;
+  margin: auto;
+  list-style: none;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+  padding-bottom: 20px
+}
 
+.school-name{
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.place{
+  width: 100%;
+  position: absolute;
+  color: #D73D45;
+  font-size: 2em;
+  font-weight: 1;
+  text-align: center;
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-family: sans-serif;
+  padding-top: 50px;
+}
+
+.b-map{
+  padding-top: 30px;
+}
+
+.a-map{
+  padding-top: 30px;
+}
+
+.t-map{
+  padding-top: 30px;
+}
+
+.s-map{
+  padding-top: 30px;
+}
+
+@media screen and (min-width:678px){
+  .loca-container:nth-of-type(odd){
+    display: block;
+    float: left;
+    width: 50%;
+  }
+
+  .loca-container:nth-of-type(even){
+    display: block;
+    float: right;
+    width: 50%;
+  }
+
+   .gm:nth-of-type(odd){
+    display: block;
+    float: left;
+    width: 50%;
+    padding-bottom: 20px;
+  }
+
+  .gm:nth-of-type(even){
+    display: block;
+    float: right;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:1031px){
+
+}
