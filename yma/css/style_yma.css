@@ -784,12 +784,95 @@
 
 
 .coming-up{
-  padding: 0;
-  margin: 0;
+  margin-top: -170px;
+}
+
+.schedule{
+  padding-top: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  list-style: none;
+  width: calc(100% - 100px);
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule-dates{
+  float: left;
+  width: 30%;
+  padding-right: 10px;
+}
+
+.day{
+  padding-bottom: 10px;
+}
+
+.event{
+  padding-bottom: 10px;
+}
+
+.schedule-events{
+  float: right;
+  width: 70%;
+}
+
+.tournament{
+  width: 100%;
+  position: absolute;
+  color: #D73D45;
+  font-size: 2em;
+  font-weight: 1;
+  text-align: center;
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-family: sans-serif;
+  padding-top: 50px;
+}
+
+.events-section{
+  position: relative;
+  padding-top: 30px;
+}
+
+.events-text{
+  font-size: 1em;
+  font-family: sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.events-img-container{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.events-img{
+  max-width: 100%;
 }
 
 
-
+.summer-camp{
+  width: 100%;
+  position: absolute;
+  color: #D73D45;
+  font-size: 2em;
+  font-weight: 1;
+  text-align: center;
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-family: sans-serif;
+  padding-top: 50px;
+}
 
 
 @media screen and (min-width: 1300px){
@@ -806,7 +889,6 @@
     width: 50%;
     margin: 0;
   }
-
 }
 
 
