@@ -25,22 +25,22 @@
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <a href="#">
+                    <a href="yangsmartialarts_home.html">
                         <li>HOME</li>
                     </a>
-                    <a href="#">
+                    <a href="yangsmartialarts_about.html">
                         <li>ABOUT</li>
                     </a>
-                    <a href="#">
+                    <a href="yangsmartialarts_classes.html">
                         <li>CLASSES</li>
                     </a>
-                    <a href="#">
+                    <a href="yangsmartialarts_new_events.html">
                         <li>NEWS/EVENTS</li>
                     </a>
-                    <a href="#">
+                    <a href="yangsmartialarts_locations.html">
                         <li>LOCATIONS</li>
                     </a>
-                    <a href="#">
+                    <a href="yangsmartialarts_contact_us.html">
                         <li>CONTACT
                             US</li>
                     </a>
@@ -49,24 +49,192 @@
         </nav>
     </div>
 
-    <section class="hero">
+    <div class="hero-container">
+        <div class="slide-container">
+            <div class="mySlides fade">
+                <img src="images/classes_images/Kids_Doing_Pushups_Gus_Helping.jpg" style="width:100%">
 
+            </div>
+            <div class="mySlides fade">
+                <img src="images/classes_images/Gus_Going_Over_Falling.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/classes_images/Gus_Watching_Students_Kicks.jpg" style="width:100%">
+            </div>
+        </div>
+
+        <div class="title-container classes-tc">
+            <h1 class="title about classes-title">CLASSES</h1>
+        </div>
+
+        <div class="dot-ctrl">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <section class="class-container tiger-c">
+        <div class="class-text">
+            <div class="class-type about-text">
+                <p class="class-tt">
+                    Tiger Class
+                </p>
+                <p class="class-tt">(4-6 yrs old)</p>
+            </div>
+            <div class="class-time about-text">
+                <p class="class-dt">
+                    Tuesday - Thursday
+                </p>
+                <p class="class-dt">
+                    3:30 - 4:15
+                </p>
+            </div>
+            <div class="class-desc about-text">
+                <P>
+                    Tiger class will learn control of their body, respect for themselves,
+                    their fellow classmates, and instructors. They will begin with basic
+                    falls, kicks, stretches, and techniques/forms.
+                </P>
+            </div>
+        </div>
     </section>
 
-    <section class="intro">
-        <div class="home-text">
-
-        </div>
-        <div class="home-image">
-
+    <section class="class-container kids-c">
+        <div class="class-text">
+            <div class="class-type about-text">
+                <p class="class-tt">
+                    Kids Class
+                </p>
+                <p class="class-tt">(4-6 yrs old)</p>
+            </div>
+            <div class="class-time about-text">
+                <p class="class-dt">
+                    Monday - Friday
+                </p>
+                <p class="class-dt">
+                    4:20 - 5:20
+                </p>
+            </div>
+            <div class="class-desc about-text">
+                <P>
+                    Here we will continue will learn control of their body, respect and
+                    discipline. They will continue building their knowledge in kicks as
+                    well as falls in the best way to not injure themselves.
+                </P>
+            </div>
         </div>
     </section>
 
-    <section class="promo">
-        <div class="promo-vid">
-
+    <section class="class-container teen-c">
+        <div class="class-text">
+            <div class="class-type about-text">
+                <p class="class-tt">
+                    Teenager Class
+                </p>
+                <p class="class-tt">(4-6 yrs old)</p>
+            </div>
+            <div class="class-time about-text">
+                <p class="class-dt">
+                    Monday - Friday
+                </p>
+                <p class="class-dt">
+                    5:30 - 6:30
+                </p>
+            </div>
+            <div class="class-desc about-text">
+                <P>
+                    Building on top, the teens will be focusing on stamina and strength
+                    activites as well as movement, stances, evading and ground positions.
+                    They are now highly reccommended to take part in the friday class to
+                    practice sparring.
+                </P>
+            </div>
         </div>
     </section>
+
+    <section class="class-container adult-c">
+        <div class="class-text">
+            <div class="class-type about-text">
+                <p class="class-tt">
+                    Adult Class
+                </p>
+                <p class="class-tt">(4-6 yrs old)</p>
+            </div>
+            <div class="class-time about-text">
+                <p class="class-dt">
+                    Monday - Friday
+                </p>
+                <p class="class-dt">
+                    7:30 - 8:30
+                </p>
+            </div>
+            <div class="class-desc about-text">
+                <P>
+                    Here we will continue to train both the body and mind. We will
+                    increase pace in our lessons and going more in depth in techniques,
+                    forms, etc.
+                </P>
+            </div>
+        </div>
+    </section>
+
+    <section class="class-container sat-c">
+        <div class="class-text">
+            <div class="class-type about-text">
+                <p class="class-tt">
+                    Saturday Open Class
+                </p>
+                <p class="class-tt">(7 and up)</p>
+            </div>
+            <div class="class-time about-text">
+                <p class="class-dt">
+                    Saturday
+                </p>
+                <p class="class-dt">
+                    10:00 - 11:00
+                </p>
+            </div>
+            <div class="class-desc about-text">
+                <P>
+                    This class will study in controlling the body, movement and stepping.
+                    We will go through more advance sets of kicking and combinations.
+                </P>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active-dot", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
 </body>
 
