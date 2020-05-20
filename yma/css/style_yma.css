@@ -893,6 +893,55 @@
   }
 }
 
+@media screen and (min-width: 678px){
+  .tournament-text{
+    flex-direction: row;
+    width: 50%;
+    float: left;
+  }
+  .events-img-container{
+    flex-direction: row;
+    width: 50%;
+    height: auto;
+    float: right;
+    padding-top: 0;
+  }
+  .summer-c-text{
+    flex-direction: row;
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1031px){
+  .tournament-container{
+    flex-direction: row;
+    width: 50%;
+    float: left;
+  }
+
+  .summer-c-container{
+    flex-direction: row;
+    width: 50%;
+    float: right;
+  }
+
+  .tournament-img-container{
+    height: 300px;
+    padding: 0px
+  }
+  .summer-c-img-container{
+    height: 300px;
+    margin: 0px;
+  }
+}
+
+
+
+
+
+
+
 
 .hq-map{
   padding-top: 300px;
