@@ -799,6 +799,7 @@
   margin: auto;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
 }
 
 .schedule-dates{
@@ -1037,7 +1038,7 @@
   margin: auto;
   padding-left: 50px;
   padding-right: 50px;
-  font-family: sans-serif
+  font-family: sans-serif;
   padding-bottom: 5px;
 
 }
@@ -1053,7 +1054,7 @@
   flex-direction: row;
   margin-bottom: 30;
   padding: 10px;
-  border-color: #D73D45;
+  background-color: rgb(242, 242, 242);
 }
 
 .message-box{
