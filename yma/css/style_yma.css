@@ -331,6 +331,7 @@
 
    .intro-text{
      width: auto;
+     height: auto;
      align-items: center;
      justify-content: center;
    }
@@ -348,6 +349,7 @@
      margin-top: 50%;
      width: 100%;
      left: 0;
+     padding: 0px;
 
    }
 
@@ -371,6 +373,7 @@
      float: right;
      width: 50%;
    }
+  
   }
     
 
@@ -681,7 +684,7 @@
   width: 90%;
   height: 100px;
   padding-top: 300px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   margin-top: 50px;
 }
 
