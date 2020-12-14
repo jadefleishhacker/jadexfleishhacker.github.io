@@ -387,6 +387,10 @@ body,
         color: rgb(85, 85, 85);
     }
 
+    .ed {
+        width: 50%;
+    }
+
     .event {
         width: 300px;
         height: 250px;
