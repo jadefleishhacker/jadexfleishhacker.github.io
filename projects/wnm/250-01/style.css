@@ -401,6 +401,8 @@ body,
 
     .heaven-pic {
         width: 400px;
+        flex-wrap: wrap;
+        display: flex;
     }
 
     .name {
@@ -521,6 +523,37 @@ body,
         nav .main {
             opacity: 50%;
         }
+
+        .about-us {
+            display: flex;
+            flex-direction: column;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .about-desc {
+            padding-top: 50px;
+        }
+
+         .team-heaven {
+             display: flex;
+             flex-direction: column;
+         }
+
+         .heaven-desc {
+             padding-top: 50px;
+             width: 100%;
+         }
+
+         .team-jade {
+             display: flex;
+             flex-direction: column;
+         }
+
+         .jade-desc {
+             padding-top: 50px;
+             width: 100%;
+         }
        
     }
 
@@ -529,6 +562,18 @@ body,
     @media only screen and (min-width: 320px) and (max-width: 767px) {
         nav .main {
             display: none;
+        }
+
+        .about-us {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-desc {
+            padding-top: 50px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
     
         .fill-name {
@@ -540,6 +585,29 @@ body,
             width: 100%;
             display: block;           
         }
+
+        .team-heaven {
+             display: flex;
+             flex-direction: column;
+             width: 100%;
+         }
+
+         .heaven-desc {
+             padding-top: 50px;
+         }
+
+         .team-jade {
+             display: flex;
+             flex-direction: column;
+         }
+
+         .jade-desc {
+             padding-top: 50px;
+             width: 100%;
+         }
+        
+       
+        
     }
 
 
