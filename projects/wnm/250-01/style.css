@@ -58,7 +58,7 @@ body,
     }
 
     nav ul li:hover {
-        background: rgb(242, 242, 242);
+        background: #f4f4f4;
         border-radius: 5%;
     }
 
@@ -74,7 +74,7 @@ body,
     }
 
     nav ul ul {
-        background: rgb(240, 240, 240);
+        background: rgb(232, 232, 232);
         padding: 0;
         position: absolute;
         top: 100%;
@@ -359,6 +359,33 @@ body,
         box-shadow: 2px 1px 2px 0px rgb(56, 56, 56);
     }
 
+
+    /* Event 1 Page */
+    .event-pic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        padding-top: 150px;
+    }
+    .event-title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .event-desc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     /* TEAM PAGE */
     /* Heaven Profile */
@@ -418,6 +445,73 @@ body,
 
 
 
+    /* CONTACT PAGE */
+    .contact-page {
+        padding: 150px 50px 0 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #565656;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #e8e8e8;
+        color: rgb(56, 56, 56);
+    }
+
+    .fill-name {
+        width: 100%;
+        display: flex;
+    }
+
+    #fname, #month, #day {
+        margin-right: 10px;
+    }
+
+    .fill-date {
+        width: 100%;
+        display: flex;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .contact-info {
+        padding: 80px 100px 0 100px;
+    }
+
+    .info {
+        line-height: 1.5em;
+    }
+
+    .info1 {
+        padding-bottom: 20px;
+        font-weight: 600;
+    }
+
+
 
 
 
@@ -437,7 +531,15 @@ body,
             display: none;
         }
     
+        .fill-name {
+            width: 100%;
+            display: block;           
+        }
 
+        .fill-date {
+            width: 100%;
+            display: block;           
+        }
     }
 
 

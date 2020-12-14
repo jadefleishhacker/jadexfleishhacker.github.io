@@ -27,6 +27,43 @@
             <li><a class="menu-active" href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+
+    <div class="contact-page">
+        <div class="contact-container">
+            <form action="/action_page.php">
+                <label for="fname">Your Name</label>
+                <div class="fill-name">
+                    <input type="text" id="fname" name="firstname" placeholder="First...">
+                    <input type="text" id="lname" name="lastname" placeholder="Last...">
+                </div>
+
+                <label for="lname">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="...">
+
+                <label for="lname">Phone Number</label>
+                <input type="text" id="phone" name="phonenumber" placeholder="(###) ### - ####">
+
+                <label for="lname">Shooting Date</label>
+                <div class="fill-date">
+                    <input type="text" id="month" name="month" placeholder="Month...">
+                    <input type="text" id="day" name="day" placeholder="Day...">
+                    <input type="text" id="year" name="year" placeholder="Year...">
+                </div>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Please leave us a message.."
+                    style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="contact-info">
+            <p class="info info1">heavenzhang@heavenzjpg.com <br> San Francisco | Bay Area <br> (415) 123 - 4567</p>
+
+            <p class="info">Instagram: @heavenzjpg <br> Facebook: @heavenzjpg <br> Pinterest: @heavenzjpg</p>
+
+        </div>
+    </div>
+
 </body>
 
 <script src="main.js"></script>
