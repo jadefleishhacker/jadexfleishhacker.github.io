@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Final Service Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1 class="logo">heavenzjpg</h1>
+        <ul class="main">
+            <li><a class="menu-active" href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a>
+                <ul>
+                    <li><a href="#fun">Fun</a></li>
+                    <li><a href="#wedding">Wedding/Anniversary</a></li>
+                    <li><a href="#polaroid">Polaroid</a></li>
+                </ul>
+            </li>
+            <li><a href="events.html">Events</a>
+                <ul>
+                </ul>
+            </li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-container">
+        <div class="slide-container">
+            <div class="mySlides fade">
+                <img src="images/hero1.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/hero2.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/hero3.jpg">
+            </div>
+        </div>
+
+        <div class="dot-ctrl">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <h2 class="about-title">About Us</h2>
+    <section class="about-us">
+        <img class="about-pic" src="images/about-pic.jpg" alt="Heaven Taking Studio images">
+        <div class="about-desc">
+            <p>heavenzjpg is a Bay Area Photography company created in 2015 by Heaven Zhang. Her Assistant, Jade
+                Fleishhacker, then joined in 2018. They provide excellent professional photography service and
+                passionately work with their clients to manifest a product of beauty and class.
+            </p>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+
+</html>
