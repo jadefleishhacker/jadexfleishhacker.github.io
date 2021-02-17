@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jade Fleishhacker Module 1 Hw: Scene 2</title>
+    <meta name="description" content="Jade Fleishhacker Module 1 Hw: Scene 2">
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: skyblue" fog="type: linear; color: #AAA">
+        <a-torus-knot position="0 1 -5" color="#404040" arc="180" p="2" q="1" radius="1.5" radius-tubular="0.1" shadow>
+        </a-torus-knot>
+        <a-sphere position="-0.3 1 -5" color="#ff7619" radius=".5" shadow
+            animation="property: color; to: #404040; loop: true; dur: 1000"></a-sphere>
+        <a-torus-knot position="0 3.2 -5" color="#404040" arc="180" p="1" q="1" radius=".7" radius-tubular="0.1" shadow>
+        </a-torus-knot>
+        <a-torus-knot position="0.3 -.99 -5" color="#404040" arc="180" p="-.7" q="-.6" radius=".5" radius-tubular="0.1"
+            shadow>
+        </a-torus-knot>
+        <a-torus-knot position="3.9 1 -5" color="#404040" arc="180" p="2" q="2.5" radius=" 1" radius-tubular="0.1"
+            shadow rotation="170 170 50">
+        </a-torus-knot>
+        <a-sphere position="3.5 1 -5" color="#ff7619" radius=".5" shadow></a-sphere>
+        <a-sphere position="-2.5 0 -5" color="white" radius=".4" opacity="1"
+            animation="property: opacity; to: 0;loop: false; dur: 4000">
+        </a-sphere>
+        <a-sphere position="-3.2 .8 -5" color="white" radius=".3" opacity=".8"
+            animation="property: opacity; to: 0;loop: fasle; dur: 3000">
+        </a-sphere>
+        <a-sphere position="-2.8 1.5 -5" color="white" radius=".2" opacity=".7"
+            animation="property: opacity; to: 0;loop: false; dur: 2000">
+        </a-sphere>
+        <a-sphere position="-3.4 2 -5" color="white" radius=".15" opacity=".4"
+            animation="property: opacity; to: 0;loop: flase; dur: 1000"></a-sphere>
+    </a-scene>
+</body>
+
+</html>
