@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello, WebVR! • A-Frame</title>
+  <meta name="description" content="Hello, WebVR! • A-Frame">
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <!-- add aframe extras -->
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="room" src="assets/models/moody_lighting_art_gallery_2019/scene.gltf" position="0 -1 0">
+      </a-asset-item>
+
+      <a-asset-item id="creature" src="assets/models/brain_boss_creature/scene.gltf" position="0 -1 0">
+      </a-asset-item>
+    </a-assets>
+
+    <a-gltf-model src="#room" scale="0.1 0.1 0.1" position="-3.02544 -0.17931 47.39248"></a-gltf-model>
+
+    <a-gltf-model src="#creature" scale="0.025 0.025 0.025" position="1.64878 .5 -20" animation-mixer>
+    </a-gltf-model>
+    </a-gltf-model>
+
+  </a-scene>
+</body>
+
+</html>

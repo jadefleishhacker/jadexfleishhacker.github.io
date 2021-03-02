@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello, WebVR! • A-Frame</title>
+  <meta name="description" content="Hello, WebVR! • A-Frame">
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <!-- import aframe environment component -->
+  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <!-- import model here -->
+      <a-asset-item id="mask" src="models/forest_house/scene.gltf" position="0 -1 0">
+      </a-asset-item>
+    </a-assets>
+
+    <!-- add environment -->
+    <a-entity environment="preset: forest"></a-entity>
+
+    <a-gltf-model src="#mask" scale="0.8617 0.8617 0.8617" position="0.81467 0.0022 -16.30804"
+      gltf-model="models/forest_house/scene.gltf"></a-gltf-model>
+
+  </a-scene>
+</body>
+
+</html>

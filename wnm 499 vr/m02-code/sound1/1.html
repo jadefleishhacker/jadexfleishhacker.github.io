@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello, WebVR! • A-Frame</title>
+  <meta name="description" content="Hello, WebVR! • A-Frame">
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <!-- import aframe environment component -->
+  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <!-- import model here -->
+      <a-asset-item id="mask" src="models/forest_house/scene.gltf" position="0 -1 0">
+      </a-asset-item>
+
+      <a-asset-item id="person-obj" src="models/person/Low_People.obj"></a-asset-item>
+      <a-asset-item id="person-mtl" src="models/person/Low_People.mtl"></a-asset-item>
+
+      <!-- import sound with the audio tag -->
+      <audio id="swell" crossorigin="anonymous" preload="auto" src="snd/footsteps_high.wav"></audio>
+    </a-assets>
+
+    <!-- add environment -->
+    <a-entity environment="preset: forest"></a-entity>
+
+    <!-- sound is positional by default set it to false to fill the scene -->
+    <a-sound src="#swell" autoplay="true" loop="true" volume="1" positional="false"></a-sound>
+
+
+    <a-gltf-model src="#mask" scale="0.8617 0.8617 0.8617" position="0.81467 0.0022 -16.30804"
+      gltf-model="models/forest_house/scene.gltf"></a-gltf-model>
+
+    <!-- uncomment below for a postional sound -->
+
+    <!-- <a-obj-model src="#person-obj" mtl="#person-mtl" position="-10.03595 -0.15767 -7.02704"
+      scale="0.04977 0.04977 0.04977" rotation="0 -57.00000000000001 0" material="" obj-model="">
+      <a-sound src="#swell" autoplay="true" loop="true" volume="1"></a-sound>
+    </a-obj-model> -->
+
+  </a-scene>
+</body>
+
+</html>

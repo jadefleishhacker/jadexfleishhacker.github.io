@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <!-- import aframe library -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+
+    <!-- import teleport library -->
+    <script
+        src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
+</head>
+
+<body>
+
+    <!-- start a-frame scene -->
+    <a-scene>
+
+        <!-- import assets into a-assets -->
+        <a-assets>
+            <!-- for teleport controls -->
+            <a-mixin id="teleport"
+                teleport-controls="type: parabolic; button: trigger; cameraRig: #cameraRig; defaultPlaneSize: 1000; ">
+            </a-mixin>
+
+            <!-- images and sounds -->
+            <img id="boxTexture" src="assets/img/gypsum.jpg">
+            <img id="gndTexture" src="assets/img/grid.jpg">
+            <img id="sky" src="assets/img/env.jpg">
+            <audio id="metal" crossorigin="anonymous" preload="auto" src="assets/snd/footsteps_high.wav"></audio>
+
+        </a-assets>
+
+        <!-- create a skybox https://aframe.io/docs/1.0.0/primitives/a-sky.html-->
+        <a-sky src="#sky"></a-sky>
+
+        <!-- add items to scene -->
+
+        <a-sphere position="0 5 -.5" radius="5" color="#EF2D5E"
+            material="color:#eee; sphericalEnvMap:#sky;metalness:1;roughness:0;side:double;" animation__rotation="property: rotation; dir: alternate; dur: 10000;
+                                  easing: easeInSine; loop: true; to: 0 360 0" animation__position="property: position; dir: alternate; dur: 10000;
+                                  easing: easeInSine; loop: true; from: 0 5 0; to: 0 5 -40" animation__segmentw="property: segments-width; dir: alternate; dur: 1000;
+                                  easing: easeInSine; loop: true; from: 2; to: 36" animation__segmenth="property: segments-height; dir: alternate; dur: 1000;
+                                  easing: easeInSine; loop: true; from: 2; to: 18">
+            <!-- add sound inside sphere -->
+
+            <a-sound src="#metal" autoplay="true" loop="true" volume="1"></a-sound>
+        </a-sphere>
+
+        <a-sound src="#metal" autoplay="true" loop="true" volume="1"></a-sound>
+        </a-sphere>
+
+        <a-plane src="#gndTexture" repeat="1000 1000" position="0 0 -4" scale="500 500 0.00001" rotation="-90 0 0"
+            width="4" height="4" color="#7BC8A4"></a-plane>
+
+        <!-- camera with teleport controls -->
+        <a-entity id="cameraRig" position="0 0.1 0">
+            <a-entity camera wasd-controls look-controls></a-entity>
+            <a-entity id="rightHand" mixin="teleport" laser-controls="hand: right" vive-controls="hand: right"
+                oculus-go-controls="hand: right"></a-entity>
+            <a-entity id="leftHand" mixin="teleport" laser-controls="hand: left" vive-controls="hand: left"
+                oculus-go-controls="hand: left"></a-entity>
+        </a-entity>
+
+    </a-scene>
+</body>
+
+</html>

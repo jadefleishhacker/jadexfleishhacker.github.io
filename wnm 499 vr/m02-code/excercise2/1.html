@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello, WebVR! • A-Frame</title>
+  <meta name="description" content="Hello, WebVR! • A-Frame">
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <!-- import aframe environment component -->
+  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <!-- teleport stuff -->
+      <a-mixin id="teleport"
+        teleport-controls="type: parabolic; button: trigger; cameraRig: #cameraRig; defaultPlaneSize: 1000; ">
+      </a-mixin>
+      <!-- import model here -->
+      <a-asset-item id="mask" src="models/forest_house/scene.gltf" position="0 -1 0">
+      </a-asset-item>
+
+      <a-asset-item id="person-obj" src="models/person/Low_People.obj"></a-asset-item>
+      <a-asset-item id="person-mtl" src="models/person/Low_People.mtl"></a-asset-item>
+
+      <!-- import sound with the audio tag -->
+      <audio id="swell" crossorigin="anonymous" preload="auto" src="snd/footsteps_high.wav"></audio>
+    </a-assets>
+
+    <!-- add environment -->
+    <a-entity environment="preset: forest"></a-entity>
+
+    <!-- sound is positional by default set it to false to fill the scene -->
+    <!-- <a-sound src="#swell" autoplay="true" loop="true" volume="1" positional="false"></a-sound> -->
+
+
+    <a-gltf-model src="#mask" scale="0.8617 0.8617 0.8617" position="0.81467 0.0022 -16.30804"
+      gltf-model="models/forest_house/scene.gltf"></a-gltf-model>
+
+    <a-sphere scale=".5 .5 .5" position="0 5 -.5" radius="5" color="#EF2D5E" animation__rotation="property: rotation; dir: alternate; dur: 10000;
+                          easing: easeInSine; loop: true; to: 0 360 0" animation__position="property: position; dir: alternate; dur: 10000;
+                          easing: easeInSine; loop: true; from: 0 5 0; to: 0 5 -40" animation__segmentw="property: segments-width; dir: alternate; dur: 1000;
+                          easing: easeInSine; loop: true; from: 2; to: 36" animation__segmenth="property: segments-height; dir: alternate; dur: 1000;
+                          easing: easeInSine; loop: true; from: 2; to: 18">
+      <a-sound src="#swell" autoplay="true" loop="true" volume="1"></a-sound>
+    </a-sphere>
+
+    <!-- teleport rig -->
+    <a-entity id="cameraRig" position="0 0.1 0">
+      <a-entity camera wasd-controls look-controls></a-entity>
+      <a-entity id="rightHand" mixin="teleport" laser-controls="hand: right" windows-motion-controls="hand: right"
+        oculus-go-controls="hand: right" oculus-touch-controls="hand: right">
+        <!-- <a-entity id="leftHand" mixin="teleport" laser-controls="hand: left"
+                          windows-motion-controls="hand: left" oculus-go-controls="hand: left"
+                          oculus-touch-controls="hand: left">
+                      </a-entity> -->
+      </a-entity>
+
+
+  </a-scene>
+</body>
+
+</html>
