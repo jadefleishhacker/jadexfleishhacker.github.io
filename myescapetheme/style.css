@@ -33,10 +33,11 @@ body,
         margin: 0;
         padding: 0;
         border: 0;
+        color: #565656;
     }
 
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'futura-pt', sans-serif;
         font-size: 16px;
         line-height: 14px;
     }
@@ -70,7 +71,7 @@ body,
     }
 
     nav ul li:hover {
-        background: #447cff;
+        background: #F46447;
         border-radius: 5%;
     }
 
@@ -82,13 +83,14 @@ body,
         display: block;
         padding: 10px 20px;
         padding-right: 50px;
-        color: rgb(44, 44, 44);
+        color: #565656;
         text-decoration: none;
-        font-family: 'Futura', sans-serif;
+        font-family: 'futura-pt', sans-serif;
+        font-weight: 500;
     }
 
     nav ul ul {
-        background: #8eb0ff;
+        background: rgb(255, 143, 121);
         padding: 0;
         position: absolute;
         top: 100%;
@@ -119,19 +121,21 @@ body,
         text-decoration: none;
         margin-top: 25px;
         font-size: 25px;
-        color: rgb(44, 44, 44);
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
     }
 
     .active-menu {
         font-weight: bold;
+        color: #F46447
     }
 
     h1 {
         z-index: 100;
-        margin-top: 25px;
+        padding-top: 25px;
         font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
     }
 
 /* POP-UP NAV MENU */
@@ -143,7 +147,7 @@ body,
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgb(44, 44, 44);
+        background-color: #565656;
         overflow-y: hidden;
         transition: 0.5s;
         z-index: 11;
@@ -161,7 +165,7 @@ body,
         padding: 15px;
         text-decoration: none;
         font-size: 30px;
-        color: #8eb0ff;
+        color: rgb(255, 143, 121);
         display: block;
         transition: 0.3s;
     }
@@ -197,21 +201,333 @@ body,
     }
 
     /* HERO */
+    
+    #hero {
+        
+    }
+
     .blob {
         display: flex;
-        width: 50%;
+        justify-content: center;
+        align-items: center;
+        padding-right: 50px;
+    }
+
+    .hero-desc {
+        line-height: 1.2;
+        font-family: 'futura-pt', sans-serif;
+    }
+
+
+    /* Featuerd Blogs */
+
+    h2 {
+        font-family: 'futura-pt', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    section .f-blogs {
+        padding-bottom: 0px;
+        padding-top: 10px;
+        padding: 50px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.pic {
+        margin: 15px;
+        filter: saturate(50%);
+    }
+
+    div.pic:hover {
+        filter: saturate(100%);
+        width: 310px;
+        box-shadow: 0px 2px 10px rgb(175, 175, 175);
+        transition: all 0.2s;
+        transition-timing-function: ease-in-out;
+        
+    }
+
+    div.pic img {
+        width: 300px;
+        border: 3px solid white;
+    }
+
+    /* photos */
+
+    .photo-top {
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+    }
+
+    .photos-bottom {
+        display: flex;
+        justify-content: center;
+    }
+
+    .photos-bottom img {
+        padding: 20px;
+    }
+
+    .photo-left {
+        display: block;
+        width: 35%;
         float: left;
     }
 
-    .hero-text {
-        display: flex;
+    .photo-right {
+        display: block;
+        width: 35%;
+        float: left;
+    }
+
+
+    /* Jade Page */
+
+    .jade-title, .life-title, .food-title, .album-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        color: #F46447;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+    .jade-desc p {
         width: 50%;
-        float: right;
+        text-align: center;
+        margin: auto;
+        line-height: 1.2;
+        font-family: 'futura-pt',sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+
+    /* Jade Profile Images */
+
+    section .profile-imgs {
+        padding-bottom: 0px;
+        padding-top: 10px;
+        padding: 50px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.j-pic {
+        margin: 15px;
+    }
+
+    div.j-pic img {
+        width: 300px;
+        border: 3px solid white;
+    }
+
+    /* Jade Contact */
+
+    .contact-title, .explore-title {
+        text-align: center;
+        font-family: 'futura-pt',sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        padding-bottom: 40px;
+    }
+
+    .contact-page {
+        padding: 50px 50px 0 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    ::placeholder {
+        color: rgb(175, 175, 175);
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        background-color: #F7F7F7;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        color: #565656;
+    }
+
+    input[type=submit] {
+        background-color: #F46447;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: rgb(255, 143, 121);
+        color: white;
+    }
+
+    .fill-name, .fill-info {
+        width: 100%;
+        display: flex;
+    }
+
+    .fill-name #fname, .fill-info #email {
+        margin-right: 10px;
     }
 
 
 
+    /* Life Blogs Page */
 
+    #life-title, #food-title, #album-title {
+        background-color: white;
+        padding-bottom: 50px;
+    }
+
+    h4 {
+        text-align: center;
+        font-weight: 400;
+    }
+
+    /* Blogs */
+
+    .flex-container {
+        list-style: none;
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .wrap {
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .wrap li {
+        background: rgb(175, 175, 175);
+    }
+
+    .flex-item {
+        padding: 5px;
+        width: 500px;
+        height: 250px;
+        margin: 30px;
+        line-height: 225px;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    /* Life Full Image */
+    
+    .l-f-img, .f-f-img {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        background-color: rgb(175, 175, 175);
+    }
+
+    /* Eplore */
+    #explore {
+        padding-bottom: 100px;
+    }
+
+    section .explore-imgs {
+        padding-bottom: 0px;
+        padding: 25px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.e1-pic {
+        margin: 15px;
+    }
+
+    div.e1-pic img {
+        width: 300px;
+        border: 3px solid white;
+    }
+
+    div.e1-pic img:hover {
+        width: 310px;
+        box-shadow: 0px 2px 10px rgb(175, 175, 175);
+        transition: all 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+
+
+    /* Album Page */
+
+    .photos-2, .photos-3, .photos-4 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .photos-2 img, .photos-3 img, .photos-4 img {
+        padding: 20px;
+    }
+
+    .photo-2left {
+        display: block;
+        width: 35%;
+        float: left;
+    }
+
+    .photo-2right {
+        display: block;
+        width: 35%;
+        float: left;
+    }
+
+    .photo-3left {
+        display: block;
+        width: 25%;
+        float: left;
+    }
+
+    .photo-3right {
+        display: block;
+        width: 45%;
+        float: left;
+    }
+
+    .photo-4left {
+        display: block;
+        width: 45%;
+        float: left;
+    }
+
+    .photo-4right {
+        display: block;
+        width: 25%;
+        float: left;
+    }
+
+    
 
     /* IPAD LAYOUT */
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -222,6 +538,7 @@ body,
         .openbtn {
             display: inherit;
         }
+
     }
 
     /* MOBILE LAYOUT */
@@ -233,4 +550,9 @@ body,
         .openbtn {
             display: inherit;
         }
+
+
     }
+
+
+    
