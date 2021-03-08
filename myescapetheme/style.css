@@ -168,6 +168,7 @@ body,
         color: rgb(255, 143, 121);
         display: block;
         transition: 0.3s;
+        font-family: 'futura-pt', sans-serif;
     }
 
     .overlay a:hover, .overlay a:focus {
@@ -211,12 +212,39 @@ body,
         justify-content: center;
         align-items: center;
         padding-right: 50px;
+        padding-top: 0px;
     }
 
     .hero-desc {
         line-height: 1.2;
         font-family: 'futura-pt', sans-serif;
     }
+
+    .svg {
+        fill: #F46447;
+    }
+
+    .hero-text li {
+        margin-top: 20px;
+        list-style: none;
+        background-color: #F46447;
+        padding: 10px;
+        width: 200px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .hero-text li:hover {
+        background-color: rgb(255, 143, 121);
+    }
+
+    .hero-text li a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-weight: 500;
+    }
+
 
 
     /* Featuerd Blogs */
@@ -539,6 +567,16 @@ body,
             display: inherit;
         }
 
+        .blob {
+            padding-top: 30px;
+            width: 100%;
+        }
+
+        .hero-text {
+            margin-left: 30px;
+            margin-right: 40px;
+        }
+
     }
 
     /* MOBILE LAYOUT */
@@ -549,6 +587,17 @@ body,
 
         .openbtn {
             display: inherit;
+        }
+
+        .blob  {
+            display: inline;
+            padding-top: 20px;
+        }
+
+        .hero-text {
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
         }
 
 
