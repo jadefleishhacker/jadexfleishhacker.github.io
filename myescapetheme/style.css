@@ -70,23 +70,25 @@ body,
     }
 
     nav ul li:hover {
-        background: #f4f4f4;
+        background: #447cff;
         border-radius: 5%;
     }
 
     nav ul li:hover a {
-        color: rgb(0, 0, 0);
+        color: white
     }
 
     nav ul li a {
         display: block;
-        padding: 5px 40px;
-        color: rgb(56, 56, 56);
+        padding: 10px 20px;
+        padding-right: 50px;
+        color: rgb(44, 44, 44);
         text-decoration: none;
+        font-family: 'Futura', sans-serif;
     }
 
     nav ul ul {
-        background: rgb(232, 232, 232);
+        background: #8eb0ff;
         padding: 0;
         position: absolute;
         top: 100%;
@@ -104,19 +106,23 @@ body,
         float: right;
     }
 
+    nav{
+        background-color: white;
+    }
+
     .site-title {
         float: left;
         padding-left: 50px;
-        padding-top: 5px;
+        padding-top: 10px;
         position: fixed;
         z-index: 100;
         text-decoration: none;
         margin-top: 25px;
         font-size: 25px;
-        color: black;
+        color: rgb(44, 44, 44);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
     }
-
-
 
     .active-menu {
         font-weight: bold;
@@ -137,8 +143,7 @@ body,
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.9);
+        background-color: rgb(44, 44, 44);
         overflow-y: hidden;
         transition: 0.5s;
         z-index: 11;
@@ -156,7 +161,7 @@ body,
         padding: 15px;
         text-decoration: none;
         font-size: 30px;
-        color: #818181;
+        color: #8eb0ff;
         display: block;
         transition: 0.3s;
     }
@@ -191,8 +196,24 @@ body,
         }
     }
 
+    /* HERO */
+    .blob {
+        display: flex;
+        width: 50%;
+        float: left;
+    }
+
+    .hero-text {
+        display: flex;
+        width: 50%;
+        float: right;
+    }
 
 
+
+
+
+    /* IPAD LAYOUT */
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         nav .menu {
             display: none;
@@ -203,6 +224,7 @@ body,
         }
     }
 
+    /* MOBILE LAYOUT */
     @media only screen and (min-width: 320px) and (max-width: 767px) {
         nav .menu {
             display: none;
