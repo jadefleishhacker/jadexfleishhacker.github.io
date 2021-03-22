@@ -204,7 +204,7 @@ body,
     }
 
     .active, .dot:hover {
-        background-color: red;
+        background-color: black;
     }
 
     .fade {

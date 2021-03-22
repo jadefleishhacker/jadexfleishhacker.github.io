@@ -1,7 +1,12 @@
 <footer>
     <p>This is a Footer</p>
 </footer>
-<?php wp_footer() ?>
+
 </body>
+
+<script src="/myescapetheme/main.js"></script>
+
+<?php wp_footer() ?>
+
 </html>
 
