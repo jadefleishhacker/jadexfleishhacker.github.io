@@ -1,0 +1,31 @@
+.menu {
+    background-color: #565656;
+    padding: 10px;
+}
+h1 {
+    color: #fdbb36;
+    text-align: center;
+}
+p {
+    font-family: Verdana, sans-serif;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li {
+    text-transform: uppercase;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover {
+    font-weight: bold;
+    color: #fdbb36;
+}
