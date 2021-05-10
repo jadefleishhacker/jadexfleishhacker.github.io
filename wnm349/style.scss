@@ -1,4 +1,4 @@
-$main-color: #6931C2
+$main-color: #6931C2;
 $main-font: 'Roboto', sans-serif;
 $text-color: #565656;
 $background: #F1F1F1;
@@ -198,7 +198,7 @@ body,
         display: flex;
         padding-top: 72px;
         padding-right: 80px;
-        text-align: center;
+        text-align: left;
         list-style: none;
         line-height: 2em;
         width: 960px;
