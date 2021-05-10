@@ -1,0 +1,222 @@
+body,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ol,
+    li,
+    dl,
+    dt,
+    dd,
+    img,
+    form,
+    fieldset,
+    input,
+    textarea,
+    blockquote {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: #565656;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    nav {
+        float: left;
+        margin: 0;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav div {
+        display: inline;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+    nav li a {
+        color: #565656;
+        display: block;
+        line-height: 2em;
+        padding: 2em 1.5em;
+        text-decoration: none;
+    }
+
+    .hover:hover {
+        font-weight: 900;
+    }
+    
+    .logo {
+        float: left;
+        position: relative;
+        margin: 16px 40px 15px 40px;
+    }
+
+    .menu-div {
+       background: #F1F1F1;
+       width: 100%;
+       position: fixed;
+    }
+
+    .active-menu {
+        font-weight: 900;
+    }
+
+    .sign-in-up {
+        padding-left: 56.5em;
+    }
+
+    .sign-up {
+        color: white;
+        background-color:#6931C2;
+        padding: 8px 40px;
+        border-radius: 4%;
+        box-shadow: 0 0 10px #a5a5a5;
+    }
+
+    .sign-up:hover {
+        color: #565656;
+        background-color: white;
+        border: #6931C2 2px solid;
+    }
+    
+    .active-sign-up {
+        color: #565656;
+        background-color: white;
+        border: #6931C2 2px solid;
+    }
+
+   
+
+
+
+    .home-content1 {
+        height: 640px;
+        overflow: hidden;
+        background-color: #F1F1F1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .h-content1-text {
+        width: 40%;
+        padding: 300px 40px 40px 40px;
+        width: 400px;
+    }
+
+    .home-download {
+        color: white;
+        background-color: #6931C2;
+        padding: 16px 40px;
+        border-radius: 4%;
+        text-decoration: none;
+        box-shadow: 0 0 10px #a5a5a5;
+    }
+
+    .home-download:hover {
+        color: #565656;
+        background-color: white;
+        border: #6931C2 2px solid;
+    }
+
+    .h-content1-images {
+        padding-top: 200px;
+        padding-right: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+   
+
+
+
+    .home-content2 {
+        height: 800px;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .h-content2-ht {
+        padding-top: 72px;
+        text-align: center;
+    }
+
+    .h-content2-main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .h-content2-main-text {
+        width: 40%;
+        padding: 240px 40px 40px 40px;
+        width: 400px;
+    }
+
+    .h-content2-img {
+        padding-top: 140px;
+        padding-right: 40px;
+    }
+
+
+
+
+
+    footer {
+        height: 320px;
+        background-color: #F1F1F1;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .f-logo {
+        padding: 72px 0 0 0;
+        margin: 0;
+
+    }
+
+    .footer-links {
+        display: flex;
+        padding-top: 72px;
+        padding-right: 80px;
+        text-align: center;
+        list-style: none;
+        line-height: 2em;
+        width: 960px;
+        align-content: center;
+        justify-content: center;
+        }
+
+    .footer-links a {
+        color: #565656;
+        text-decoration: none;
+        width: 900px;
+    }
+
+    .link-gta {
+        padding: 0 64px 0 64px
+    }
+
+    .footer-social {
+        padding-top: 72px;
+        text-align: right;
+        line-height: 2em;
+        right: 40px;
+    }
+
+    .instagram-link {
+        padding: 4px 12px 0px 12px;
+    }
