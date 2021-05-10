@@ -1,0 +1,39 @@
+    .get-app-content1 {
+        height: 800px;
+        overflow: hidden;
+        background-color: #F1F1F1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gta-content1-text {
+        width: 40%;
+        padding: 500px 40px 40px 40px;
+        width: 400px;
+    }
+
+    .gta-content1-images {
+        padding-top: 200px;
+        padding-right: 40px;
+    }
+
+
+
+    .get-app-content2 {
+        height: 550px;
+        overflow: hidden;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gta-content2-text {
+        width: 40%;
+        padding: 200px 40px 40px 40px;
+        width: 400px;
+    }
+
+    .gta-content2-image {
+        padding-top: 100px;
+        padding-right: 40px;
+    }

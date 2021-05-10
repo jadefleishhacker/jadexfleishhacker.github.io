@@ -116,7 +116,7 @@ body,
         width: 400px;
     }
 
-    .home-download {
+    .button {
         color: white;
         background-color: #6931C2;
         padding: 16px 40px;
@@ -125,7 +125,7 @@ body,
         box-shadow: 0 0 10px #a5a5a5;
     }
 
-    .home-download:hover {
+    .button:hover {
         color: #565656;
         background-color: white;
         border: #6931C2 2px solid;
