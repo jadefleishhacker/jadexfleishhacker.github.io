@@ -68,13 +68,32 @@ body,
        background: #F1F1F1;
        width: 100%;
        position: fixed;
+       display: inline;
     }
 
     .active-menu {
         font-weight: 900;
     }
 
+    .seperate {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home-btn {
+        margin-left: 140px;
+        z-index: 900;
+    }
+
     .sign-in-up {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .signin-btn{
         padding-left: 56.5em;
     }
 
@@ -84,6 +103,7 @@ body,
         padding: 8px 40px;
         border-radius: 4px;
         box-shadow: 0 0 10px #a5a5a5;
+        margin-right: 50px;
     }
 
     .sign-up:hover {
@@ -474,7 +494,7 @@ body,
     .f-logo {
         padding: 72px 0 0 0;
         margin: 0;
-
+        margin-left: 40px;
     }
 
     .footer-links {
@@ -487,7 +507,8 @@ body,
         width: 960px;
         align-content: center;
         justify-content: center;
-        }
+        margin-left: 10px;
+    }
 
     .footer-links a {
         color: #565656;
@@ -504,8 +525,111 @@ body,
         text-align: right;
         line-height: 2em;
         right: 40px;
+        margin-right: 60px;
     }
 
     .instagram-link {
         padding: 4px 12px 0px 12px;
+    }
+
+    
+
+
+
+
+
+
+     /* Index 1 */
+    @media only screen and (min-width: 1024px) and (max-width: 1377px) {
+        .home-content1 {
+            height: 1200px;
+        }
+        .phone1 {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /* Index 2 */
+    @media only screen and (min-width: 769px) and (max-width: 947px) {
+       
+    }
+
+
+
+    /* IPAD LAYOUT */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+       .home-content1 {
+            height: 1200px;
+        }
+
+        .get-app-content1 {
+            height: 1250px;
+        }
+
+        .phone1 {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+        .home-btn {
+            color: red;
+        }
+        
+        .get-app-content2 {
+            height: 900px;
+            display: flex;
+            flex-direction: column;
+        }
+       
+    }
+
+   
+    /* MOBILE LAYOUT */
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+       .home-content1 {
+            height: 1640px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .h-content1-images {
+            padding-top: 100px;
+        }
+
+        .laptop1 {
+            padding-bottom: 40px;
+        }
+
+        .phone1 {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .get-app-content1 {
+            height: 1050px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        
+        .gta-content1-text {
+            padding-top: 200px;
+        }
+
+        .gta-content1-images {
+            padding-top: 100px;
+            justify-content: space-around;
+            display: flex;
+        }
+
+        .phone2 {
+            margin-left: 0px;
+        }
+        
+        
     }
