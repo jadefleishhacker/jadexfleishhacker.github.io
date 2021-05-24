@@ -267,10 +267,11 @@ body,
     }
 
     input[type=text] {
-        padding: 16px 560px 16px 16px;
+        padding: 16px 540px 16px 16px;
         margin-top: 8px;
         font-size: 17px;
         border: none;
+        justify-content: center;
     }
 
     input:focus-visible {
@@ -282,7 +283,7 @@ body,
         float: right;
         padding: 6px 32px;
         margin-top: 8px;
-        margin-right: 16px;
+        margin-right: 40px;
         background-color: #6931C2;
         border-radius: 0% 4px 4px 0%;
         color: white;
@@ -298,10 +299,11 @@ body,
     }
 
     .support-cards {
-        height: 520px;
+        height: 540px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-content: flex-start;
     }
 
     .cards {
@@ -353,6 +355,11 @@ body,
         margin-bottom: 40px;
     }
 
+    .si-f-1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .si-f-2 {
         margin-bottom: 40px;
     }
@@ -385,7 +392,7 @@ body,
 
 
 
-    /* SIGN IN */
+    /* SIGN UP */
 
     .signup {
         height: 1132px;
@@ -537,13 +544,22 @@ body,
 
 
 
-
+    @media only screen and (min-width: 771px) and (max-width: 1441px) {
+        .support-cards {
+            height: 960px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+        }
+    }
 
      /* Index 1 */
     @media only screen and (min-width: 1024px) and (max-width: 1377px) {
         .home-content1 {
             height: 1200px;
         }
+
         .phone1 {
             display: flex;
             margin-left: auto;
@@ -553,19 +569,57 @@ body,
 
     /* Index 2 */
     @media only screen and (min-width: 769px) and (max-width: 947px) {
+       .home-content1 {
+           height: 1200px;
+           display: flex;
+           flex-direction: column;
+       }
        
+       .h-content1-text {
+           padding-top: 200px;
+       }
+
+       .h-content1-images {
+           padding-top: 80px;
+       }
+
+       .phone1 {
+           margin-top: 80px;
+       }
     }
 
 
 
     /* IPAD LAYOUT */
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @media only screen and (min-width: 719px) and (max-width: 1023px) {
        .home-content1 {
-            height: 1200px;
-        }
+           height: 1580px;
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+       }
+
+       .h-content1-text {
+            padding-top: 200px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+       }
+
+       .h-content1-images {
+           padding-top: 100px;
+       }
 
         .get-app-content1 {
             height: 1250px;
+        }
+
+        .laptop1 {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .phone1 {
@@ -577,27 +631,89 @@ body,
         .home-btn {
             color: red;
         }
-        
-        .get-app-content2 {
-            height: 900px;
+
+        .home-content2 {
+            height: 1340px;
             display: flex;
             flex-direction: column;
+            align-content: center;
+            align-items: center;
         }
-       
-    }
 
-   
-    /* MOBILE LAYOUT */
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
-       .home-content1 {
-            height: 1640px;
+        .h-content2-main {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
         }
 
+        .h-content2-main-text {
+            padding-top: 100px;
+            text-align: center;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .get-app-content2 {
+            height: 900px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .gta-content2-text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 100px;
+        }
+
+        .gta-content2-image {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 0px;
+        }
+
+        input[type=text] {
+            padding: 16px 200px 16px 16px;
+        }
+       
+        .support-cards {
+            height: 960px;
+        }
+    }
+
+   
+    /* MOBILE LAYOUT */
+    @media only screen and (min-width: 320px) and (max-width: 718px) {
+        .home-btn {
+            color: green;
+        }
+        
+        .home-content1 {
+            height: 1580px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .h-content1-text {
+            padding-top: 200px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .h-content1-images {
             padding-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 0px;
         }
 
         .laptop1 {
@@ -610,6 +726,33 @@ body,
             margin-right: auto;
         }
 
+        .home-content2 {
+            height: 1240px;
+        }
+
+        .h-content2-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .h-content2-main-text {
+            padding-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .h-content2-img {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 0px;
+            padding-top: 60px;
+        }
+
         .get-app-content1 {
             height: 1050px;
             display: flex;
@@ -619,17 +762,62 @@ body,
         
         .gta-content1-text {
             padding-top: 200px;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .gta-content1-images {
             padding-top: 100px;
             justify-content: space-around;
             display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 0px;
         }
 
         .phone2 {
             margin-left: 0px;
         }
+
+        .get-app-content2 {
+            height: 850px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .gta-content2-text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 100px;
+        }
+
+        .gta-content2-image {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 0px;
+        }
+
+        .laptop2 {
+            width: 500px;
+        }
+
+        .support-cards {
+            height: 1840px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+        }
         
+        input[type=text] {
+            padding: 16px 200px 16px 16px;
+        }
         
     }
