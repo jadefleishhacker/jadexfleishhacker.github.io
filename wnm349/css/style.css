@@ -118,6 +118,71 @@ body,
         border: #6931C2 2px solid;
     }
 
+
+
+
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #565656;
+        overflow-y: hidden;
+        transition: 0.5s;
+        z-index: 11;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 15px;
+        text-decoration: none;
+        font-size: 30px;
+        color: rgb(255, 143, 121);
+        display: block;
+        transition: 0.3s;
+        font-family: 'futura-pt', sans-serif;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        z-index: 12;
+    }
+
+    .openbtn {
+        position: fixed;
+        display: none;
+        top: 30px;
+        right: 58px;
+        z-index: 10;
+    }
+
+    @media screen and (max-height: 450px) {
+        .overlay {overflow-y: auto;}
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+    }
+
    
 
 
@@ -545,6 +610,7 @@ body,
 
 
     @media only screen and (min-width: 771px) and (max-width: 1441px) {
+    
         .support-cards {
             height: 960px;
             display: flex;
@@ -556,6 +622,7 @@ body,
 
      /* Index 1 */
     @media only screen and (min-width: 1024px) and (max-width: 1377px) {
+
         .home-content1 {
             height: 1200px;
         }
@@ -569,7 +636,8 @@ body,
 
     /* Index 2 */
     @media only screen and (min-width: 769px) and (max-width: 947px) {
-       .home-content1 {
+        
+        .home-content1 {
            height: 1200px;
            display: flex;
            flex-direction: column;
@@ -592,7 +660,19 @@ body,
 
     /* IPAD LAYOUT */
     @media only screen and (min-width: 719px) and (max-width: 1023px) {
-       .home-content1 {
+        nav .menu {
+            display: none;
+        }
+
+        .openbtn {
+            display: inherit;
+        }
+
+        .seperate {
+            display: none;
+        }
+
+        .home-content1 {
            height: 1580px;
            display: flex;
            flex-direction: column;
@@ -626,10 +706,6 @@ body,
             display: flex;
             margin-left: auto;
             margin-right: auto;
-        }
-       
-        .home-btn {
-            color: red;
         }
 
         .home-content2 {
@@ -689,10 +765,18 @@ body,
    
     /* MOBILE LAYOUT */
     @media only screen and (min-width: 320px) and (max-width: 718px) {
-        .home-btn {
-            color: green;
+        nav .menu {
+            display: none;
         }
-        
+
+        .openbtn {
+            display: inherit;
+        }
+
+        .seperate {
+            display: none;
+        }
+
         .home-content1 {
             height: 1580px;
             display: flex;
@@ -718,6 +802,7 @@ body,
 
         .laptop1 {
             padding-bottom: 40px;
+            width: 450px;
         }
 
         .phone1 {
@@ -751,6 +836,7 @@ body,
             margin-right: auto;
             padding-right: 0px;
             padding-top: 60px;
+            width: 450px;
         }
 
         .get-app-content1 {
@@ -818,6 +904,46 @@ body,
         
         input[type=text] {
             padding: 16px 200px 16px 16px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            height: 600px;
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+        }
+
+        .f-logo {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-links {
+            width: 400px;
+            padding: 0px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-social {
+            width: 400px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-top: 40px;
         }
         
     }
